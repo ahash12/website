@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahash's World</title>
+  
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    font-family: 'Lora', serif;
+    background-color: #ffffff;
+    color: #111111;
+    line-height: 1.6;
+    display: flex;
+  }
+
+  /* SIDEBAR STYLES (Restored) */
+  .sidebar {
+    width: 280px;
+    background: #ffffff;
+    padding: 2rem 1rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    z-index: 1000;
+    justify-content: space-between;
+  }
+
+  .sidebar-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+  }
+
+  .sidebar h1 {
+    font-size: 1.6rem;
+    margin: 0.5rem 0 0.2rem 0;
+    text-align: center;
+  }
+
+  .sidebar p {
+    font-size: 0.95rem;
+    margin: 0;
+    color: #555;
+    text-align: center;
+  }
+
+  .icons {
+    margin-bottom: 1rem;
+  }
+
+  .icons a {
+    margin: 0 0.5rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #111;
+  }
+
+  /* MAIN CONTENT STYLES */
+  main {
+    margin-left: 280px; /* Clears the sidebar */
+    /* Increased max-width significantly to fill the page */
+    max-width: 1100px; 
+    width: 100%;
+    padding: 3rem 4rem; /* "Normal margins" inside the content area */
+    box-sizing: border-box;
+    background: #ffffff;
+  }
+
+  section {
+    margin-bottom: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    color: #000;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Adventure/Job Block Styling */
+  .adventure-block {
+    margin-bottom: 2rem;
+  }
+
+  .adventure-title {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+  }
+
+  ul {
+    padding-left: 1.2rem;
+    margin-top: 0;
+  }
+
+  ul li {
+    margin-bottom: 0.6rem;
+  }
+
+  a {
+    color: #111;
+    text-decoration: underline;
+  }
+</style>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+  <div class="sidebar">
+    <div class="sidebar-top">
+      <img src="/coconut.jpg" alt="Profile Photo">
+      <h1>Ahash Ganeshamoorthy</h1>
+      <p>MD Candidate | Researcher</p>
+    </div>
+    <div class="icons">
+      <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="mailto:yourname@email.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="#" target="_blank" title="Radiel Health"><i class="fas fa-stethoscope"></i></a>
+    </div>
+  </div>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>I’m a medical student interested in pushing the frontier of health.</p>
+    </section>
+
+    <section>
+      <h2>Current Adventures</h2>
+      
+      <div class="adventure-block">
+        <span class="adventure-title">Radiel Health</span>
+        <ul>
+          <li>
+            Building an AI-enhanced physics modelling platform to model surgical interventions accurately at scale
+          </li>
+          <li>
+            Working with:
+            <ul>
+              <li>Fluid Flow Physics at the University of Waterloo</li>
+              <li>Neurosurgery at the University of Miami</li>
+            </ul>
+          </li>
+          <li>
+            Learn more at <a href="https://radielhealth.com/">radielhealth.com</a>
+          </li>
+        </ul>
+      </div>
+
+
+    <section>
+      <h2>Past Endeavours</h2>
+      
+      <div class="adventure-block">
+        <span class="adventure-title">DeSci Fellow <a href="https://molecule.xyz/">@MoleculeDAO </a> (April-May 2025)</span>
+        <ul>
+          <li>Learned under the MoleculeDAO team on Crypto uses in science.</li>
+        </ul>
+      </div>
+
+      <div class="adventure-block">
+        <span class="adventure-title">Research <a href="https://datchem.life/">@DatChem </a> (Nov 2023-Jan 2024)</span>
+        <ul>
+          <li>Learned under Professor Carolyn Mountford to use ML in Magnetic Resonance Spectroscopy.</li>
+        </ul>
+      </div>
+
+      <div class="adventure-block">
+        <span class="adventure-title">Design @Cradle (Jan 2022-Jan 2023)</span>
+        <ul>
+          <li>Worked on UI interfaces for a seed-stage Web3 startup (now aquired).</li>
+        </ul>
+      </div>
+
+      <div class="adventure-block">
+        <span class="adventure-title">Research @Apollo Neuro (June 2020-Sept 2020)</span>
+        <ul>
+          <li>Worked on UI interfaces for a seed-stage Web3 startup (now aquired).</li>
+        </ul>
+      </div>
+
+    </section>
+  </main>
+  
+</body>
+</html>
