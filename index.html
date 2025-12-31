@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahash's World</title>
+  <link rel="icon" type="image/png" href="website/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    font-family: 'Lora', serif;
+    background-color: #ffffff;
+    /* Rich Black Text */
+    color: #536165; 
+    line-height: 1.6;
+    display: flex;
+  }
+
+  /* SIDEBAR STYLES */
+  .sidebar {
+    width: 280px;
+    background: #ffffff;
+    padding: 3rem 1.5rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    z-index: 1000;
+    justify-content: flex-start; 
+  }
+
+  .sidebar-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5rem; 
+  }
+
+  .sidebar img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+  }
+
+  .sidebar h1 {
+    font-size: 1.6rem;
+    margin: 0.5rem 0 0.2rem 0;
+    text-align: center;
+    color: #001524;
+  }
+
+  .sidebar p {
+    font-size: 0.95rem; 
+    margin: 0;
+    color: #49565A; 
+    text-align: center;
+  }
+
+  /* Vertical Menu Styles */
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; 
+    width: 100%;
+  }
+
+  .nav-menu a {
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #49565A; 
+    transition: all 0.2s ease;
+  }
+
+  .nav-menu a:hover {
+    color: #003366;
+    text-decoration: underline;
+  }
+
+  /* MAIN CONTENT STYLES */
+  main {
+    margin-left: 280px;
+    max-width: 1100px; 
+    width: 100%;
+    padding: 3rem 4rem;
+    box-sizing: border-box;
+    background: #ffffff;
+  }
+
+  section {
+    margin-bottom: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    color: #001524;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .adventure-block {
+    margin-bottom: 2rem;
+  }
+
+  .adventure-title {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+    color: #001524;
+  }
+
+  ul {
+    padding-left: 1.2rem;
+    margin-top: 0;
+  }
+
+  ul li {
+    margin-bottom: 0.6rem;
+  }
+
+  /* Global Link Style (Content Area) */
+  .content-link {
+    color: #003366; 
+    text-decoration: underline;
+  }
+
+  .content-link:hover {
+    color: #002244;
+  }
+  
+  /* Fallback for general links in main content */
+  main a {
+    color: #003366; 
+    text-decoration: underline;
+  }
+
+  /* NEW STYLE FOR PROJECT LINKS ROW */
+  .project-links-row {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #001524;
+  }
+  
+  .project-links-row a {
+    color: #003366;
+    text-decoration: underline;
+    font-weight: 500;
+    /* Added more margin around links for spacing */
+    margin: 0 10px;
+  }
+
+  /* Ensure the first link stays aligned to the left */
+  .project-links-row a:first-child {
+    margin-left: 0;
+  }
+
+  .project-links-row a:hover {
+    color: #002244;
+  }
+</style>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+  <div class="sidebar">
+    <div class="sidebar-top">
+      <img src="website/coconut.JPG" alt="Profile Photo">
+      <h1>Ahash Ganeshamoorthy</h1>
+      <p>MD Candidate | Researcher</p>
+    </div>
+    
+    <nav class="nav-menu">
+      <a href="https://www.linkedin.com/in/ahash-ganeshamoorthy/" target="_blank">LinkedIn</a>
+      <a href="https://x.com/AhashGaneshamo1" target="_blank">Twitter</a>
+      <a href="mailto:ahashganeshamoorthy@gmail.com">Email</a>
+      <a href="https://docs.google.com/document/d/1W2eqAkw72Q4bsv-Uum865ZUgI-CCTIXadIRYVJ6Yw8I/edit?usp=sharing">CV</a>
+    </nav>
+  </div>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>I’m a medical student based at Griffith University & Gold Coast University Hospital in Gold Coast, Australia interested in pushing the frontiers of health using technology. Some areas that I'm interested in are: </p>
+      <ul>
+        <li>AI-based clinical decision support</li>
+        <li>Digital Twins in surgical and pharmaceutical development</li>
+        <li>Rerouting economic systems to reduce global inequity</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Current Adventures</h2>
+      
+      <div class="adventure-block">
+        <span class="adventure-title">Radiel Health</span>
+        <ul>
+          <li>
+            Building an AI-enhanced physics modelling platform to model surgical interventions accurately at scale
+          </li>
+          <li>
+            Working with:
+            <ul>
+              <li>Fluid Flow Physics at the University of Waterloo</li>
+              <li>Neurosurgery at the University of Miami</li>
+            </ul>
+          </li>
+          <li>
+            Learn more at <a href="https://radielhealth.com/">radielhealth.com</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section>
+      <h2>Past Endeavours</h2>
+      
+      <div class="adventure-block">
+        <span class="adventure-title">DeSci Fellow <a href="https://molecule.xyz/" class="content-link">@MoleculeDAO </a> (April-May 2025)</span>
+        <ul>
+          <li>Learned under the MoleculeDAO team on Crypto uses in science.</li>
+        </ul>
+      </div>
+
+      <div class="adventure-block">
+        <span class="adventure-title">Research <a href="https://datchem.life/" class="content-link">@DatChem </a> (Nov 2023-Jan 2024)</span>
+        <ul>
+          <li>Learned under Professor Carolyn Mountford to use ML in Magnetic Resonance Spectroscopy.</li>
+        </ul>
+      </div>
+
+      <div class="adventure-block">
+        <span class="adventure-title">Design @Cradle (Jan 2022-Jan 2023)</span>
+        <ul>
+          <li>Worked on UI interfaces for a seed-stage Web3 startup (now aquired).</li>
+        </ul>
+      </div>
+
+      <div class="adventure-block">
+        <span class="adventure-title">Research <a href="https://apolloneuro.com/en-ca" class="content-link">@Apollo Neuro </a> (June-September 2020)</span>
+        <ul>
+          <li>Worked on the design and ideation of an Apollo Neuro research platform that aimed to analyze EEG activity after using their wearable device</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section>
+        <h2>Fun Projects</h2>
+        
+        <div class="adventure-block">
+          <span class="adventure-title">
+            Using CRISPR-Cas9 Systems and AAV's to Reverse the SIRT1-L107P Mutation in Type-1 Diabetes (February 2020)</span>
+          <ul>
+            <li>In Yr 11, I co-wrote a proposal that targeted the SIRT1 gene in an attempt to reverse Type-1 Diabetes.</li>
+          </ul>
+          <ul>
+            <li>Our team won the first prize at the 2020 Reg20 Conference at the University of Toronto among graduate and undergraduate students.</li>
+          </ul>
+          
+          <div class="project-links-row">
+            <a href="https://drive.google.com/file/d/1H83MiKPETFHnXqgMbZLHBK2MmR4dgz6h/view">Paper</a> | <a href="https://www.youtube.com/watch?v=M7LZOAzbXcE">Presentation</a> | <a href="https://medium.com/@ahashganeshamoorthy/sirt1-crispr-cas9-a-new-approach-to-reversing-t-1-diabetes-69803104be93">Article</a> | <a href="https://www.youtube.com/watch?v=4wG2khiH0_M">Video</a>
+          </div>
+
+        </div>
+  
+        <div class="adventure-block">
+            <span class="adventure-title">
+              EHR Unity (CU Hacks 2020)</span>
+            <ul>
+              <li>In Yr 11, my friend and I made a small demo that allowed doctors to upload medical information into a blockchain-based database to enable distributed access in a secure fashion.</li>
+            </ul>
+            <ul>
+                <li>Our team won the 'Best Use of Blockstacks Award' at CU Hacks 2020.</li>
+              </ul>
+            <div class="project-links-row">
+              <a href="https://devpost.com/software/integrating-electronic-health-records-using-blockstack">Devpost</a> 
+            </div>
+  
+          </div>
+          <div class="adventure-block">
+            <span class="adventure-title">
+              Reducing the Cost of Living in Toronto (Jan 2020)</span>
+            <ul>
+              <li>I worked on a project that aimed to reduce costs for Sidewalk Labs' proposed Toronto development. We suggested utilizing novel technologies such as kinetic pavements and permeable asphalt to save utlility costs.</li>
+            </ul>
+            <ul>
+                <li>Our team met part of the executive team of Sidewalk Labs to pitch our proposal.</li>
+              </ul>
+            <div class="project-links-row">
+              <a href="https://drive.google.com/file/d/15YiwW0bZKDzfkOOYphxx09Taliwm8rIe/view?usp=sharing">Pitch Deck</a> 
+            </div>
+  
+          </div>
+
+        <div class="adventure-block">
+            <span class="adventure-title">
+              Vitalis (July-August 2019)</span>
+            <ul>
+              <li>I worked on a project that aimed to promote remote health monitoring and telemedicine using a wrist-based wearable device.</li>
+            </ul>
+            <ul>
+                <li>We were part of the DMZ Basecamp program based at TMU in Toronto. We were mentored by startup founders and physicians based at Sick Kids Hospital & Toronto General Hospital.</li>
+              </ul>
+            <div class="project-links-row">
+              <a href="https://vitalis.netlify.app/">Website</a> 
+            </div>
+  
+          </div>
+          <div class="adventure-block">
+            <span class="adventure-title">
+              The Future of Chemotherapy (February 2019)</span>
+            <ul>
+              <li>This was my first introduction to research, where we wrote a (naive) paper on using nanotechnology to improve chemotherapy delivery.</li>
+            </ul>
+            <ul>
+                <li>We won second prize at the 2019 University of Toronto SSSCR Conference.</li>
+              </ul>
+            <div class="project-links-row">
+              <a href="https://drive.google.com/file/d/1wb3Z0TN7ZmmZrPHbYJ8lDbEOJcEeBU9i/view">Paper</a>
+            </div>
+  
+          </div>
+  
+      </section>
+  </main>
+  
+</body>
+</html>
